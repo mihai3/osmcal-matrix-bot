@@ -1,11 +1,11 @@
-import * as config from "config";
+import * as _config from "config";
 
 interface IConfig {
     homeserverUrl: string;
     accessToken: string;
-    autoJoin: boolean;
     dataPath: string;
     encryption: boolean;
+    rooms: {id: string, osmcal: string; lang?: string; }
 }
 
-export default <IConfig>config;
+export default _config.default<IConfig>;

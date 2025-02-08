@@ -6,12 +6,17 @@ homeserverUrl: "https://matrix.org"
 # at https://t2bot.io/docs/access_tokens
 accessToken: "YOUR_TOKEN_HERE"
 
-# Whether or not to autojoin rooms when invited.
-autoJoin: true
-
 # Location on disk for where to store various bot information.
 dataPath: "storage"
 
 # Set to false to disable encryption support. Encrypted data will be
 # stored under dataPath.
 encryption: true
+
+# The list of rooms to join and the corresponding feeds.
+#rooms:
+#  - id: !someroomid:matrix.org"
+#    osmcal: https://osmcal.org/api/v2/events/?in=at
+#    # optional:
+#    lang: de-AT                                      
+rooms: []

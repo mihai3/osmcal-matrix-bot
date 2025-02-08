@@ -1,37 +1,35 @@
 {
-  "name": "matrix-bot-sdk-bot-template",
-  "version": "0.1.0",
-  "author": "TravisR",
-  "license": "Apache-2.0",
-  "description": "A template repository for bots made with the matrix-bot-sdk",
+  "name": "osmcal-matrix-bot",
+  "version": "1.0.0",
+  "author": "mihai3",
+  "license": "GPL-3.0-or-later",
+  "description": "A Matrix bot for posting osmcal.org event reminders to a Matrix channel",
+  "type": "module",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/turt2live/matrix-bot-sdk-bot-template.git"
+    "url": "git+https://github.com/mihai3/osmcal-matrix-bot.git"
   },
-  "bugs": {
-    "url": "https://github.com/turt2live/matrix-bot-sdk-bot-template/issues"
-  },
-  "homepage": "https://github.com/turt2live/matrix-bot-sdk-bot-template#readme",
+  "homepage": "https://github.com/mihai3/osmcal-matrix-bot.git",
   "keywords": [
     "matrix",
     "bot",
-    "template"
+    "openstreetmap",
+    "osmcal"
   ],
   "main": "lib/index.js",
   "scripts": {
     "build": "tsc",
-    "lint": "tslint --project ./tsconfig.json -t stylish",
     "start:dev": "npm run build && node lib/index.js"
   },
   "dependencies": {
-    "config": "^3.3.6",
-    "escape-html": "^1.0.3",
+    "config": "^3.3.12",
+    "i18n-js": "^4.5.1",
     "js-yaml": "^4.1.0",
-    "matrix-bot-sdk": "^0.6.0-beta.4"
+    "matrix-bot-sdk": "^0.7.1",
+    "node-fetch": "^3.3.2"
   },
   "devDependencies": {
-    "@types/node": "^14.18.5",
-    "tslint": "^6.1.3",
-    "typescript": "^4.5.4"
+    "@types/node": "^22.13.1",
+    "typescript": "^5.7.3"
   }
 }

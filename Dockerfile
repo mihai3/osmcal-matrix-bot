@@ -1,4 +1,4 @@
-FROM node:14 AS builder
+FROM node:22 AS builder
 
 WORKDIR /src
 COPY . /src
@@ -6,7 +6,7 @@ COPY . /src
 RUN npm ci
 RUN npm run build
 
-FROM node:14
+FROM node:22
 
 ENV NODE_ENV=production
 WORKDIR /bot

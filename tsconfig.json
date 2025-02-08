@@ -2,9 +2,9 @@
     "compilerOptions": {
         "experimentalDecorators": true,
         "emitDecoratorMetadata": true,
-        "module": "commonjs",
+        "module": "ES2022",
         "moduleResolution": "node",
-        "target": "es2015",
+        "target": "ES2024",
         "noImplicitAny": false,
         "sourceMap": true,
         "outDir": "./lib",
