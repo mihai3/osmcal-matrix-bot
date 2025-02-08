@@ -12,7 +12,7 @@ You can configure which channels should receive reminders for which locations an
 * run `./osmcal-matrix-bot`
 
 Or with Docker: `docker build -t osmcal-matrix-bot:latest .`
-To run the Docker image (after building): `docker run --rm -it -v $(pwd)/config:/bot/config osmcal-matrix-bot:latest`
+To run the Docker image (after building): `docker run --rm -it -v $(pwd)/config:/bot/config -v $(pwd)/storage:/bot/storage osmcal-matrix-bot:latest`
 
 ## Project highlights
 
