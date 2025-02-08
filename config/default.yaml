@@ -1,3 +1,5 @@
+# modified: mihai3 2025-02-08
+
 # Where the homeserver's Client-Server API is located. Typically this
 # is where clients would be connecting to in order to send messages.
 homeserverUrl: "https://matrix.org"
