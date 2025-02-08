@@ -120,6 +120,7 @@ const updateFeedsAndPost = async () => {
     }
 }
 
+await updateFeedsAndPost(); // run once right now
 setInterval(updateFeedsAndPost, 3600*1000);
 
 log("Starting sync...");
