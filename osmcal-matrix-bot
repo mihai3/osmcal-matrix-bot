@@ -1,0 +1,6 @@
+#!/bin/bash
+cd "$(dirname $0)"
+
+npm install
+export NODE_ENV=${NODE_ENV:-production}
+npm run start

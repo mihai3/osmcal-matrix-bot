@@ -19,7 +19,7 @@
   "main": "lib/index.js",
   "scripts": {
     "build": "tsc",
-    "start:dev": "npm run build && node lib/index.js"
+    "start": "npm run build && node lib/index.js"
   },
   "dependencies": {
     "config": "^3.3.12",
