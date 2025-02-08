@@ -120,8 +120,8 @@ const updateFeedsAndPost = async () => {
     }
 }
 
-await updateFeedsAndPost(); // run once right now
-setInterval(updateFeedsAndPost, 3600*1000);
-
 log("Starting sync...");
 await client.start(); // This blocks until the bot is killed
+
+await updateFeedsAndPost(); // run once right now
+setInterval(updateFeedsAndPost, 3600*1000);
